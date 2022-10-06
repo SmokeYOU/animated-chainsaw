@@ -28,11 +28,12 @@ class Ui_OutputDialog(QDialog):
         """
         if len(camera_name) == 1:
         	self.capture = cv2.VideoCapture(int(camera_name))
-            
+
         else:
         	self.capture = cv2.VideoCapture(camera_name)
         self.timer = QTimer(self)  # Create Timer
         path = 'ImagesAttendance'
+        
         if not os.path.exists(path):
             os.mkdir(path)
         # known face encoding and known face name list
