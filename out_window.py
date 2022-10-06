@@ -28,6 +28,7 @@ class Ui_OutputDialog(QDialog):
         """
         if len(camera_name) == 1:
         	self.capture = cv2.VideoCapture(int(camera_name))
+            
         else:
         	self.capture = cv2.VideoCapture(camera_name)
         self.timer = QTimer(self)  # Create Timer
