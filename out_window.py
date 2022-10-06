@@ -33,7 +33,7 @@ class Ui_OutputDialog(QDialog):
         	self.capture = cv2.VideoCapture(camera_name)
         self.timer = QTimer(self)  # Create Timer
         path = 'ImagesAttendance'
-        
+
         if not os.path.exists(path):
             os.mkdir(path)
         # known face encoding and known face name list
@@ -54,6 +54,8 @@ class Ui_OutputDialog(QDialog):
             self.encode_list.append(encodes_cur_frame)
         self.timer.timeout.connect(self.update_frame)  # Connect timeout to the output function
         self.timer.start(40)  # emit the timeout() signal at x=40ms
+
+
 
     def face_rec_(self, frame, encode_list_known, class_names):
         """
