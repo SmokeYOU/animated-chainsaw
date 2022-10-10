@@ -1,5 +1,4 @@
 # Modified by Augmented Startups & Geeky Bee
-# October 2020
 # Facial Recognition Attendence GUI
 # Full Course - https://augmentedstartups.info/yolov4release
 # *-
